@@ -22,7 +22,6 @@ buildNav();
 // Add class 'active' to section when near top of viewport
 window.onscroll = function addActive() {
   sections.forEach((section) => {
-    const activeLink = navUl.querySelector(`[data-nav=${section.id}]`);
     let Bound = section.getBoundingClientRect();
     if (Bound.top >= 0) {
       if (!section.classList.contains("your-active-class")) {
@@ -34,7 +33,12 @@ window.onscroll = function addActive() {
     }
   });
 };
-
+// Add active link */
+function addActiveLink(id){
+//Add Link Active
+document . querySelector( '.active__link' ) ?.classList.remove( 'active__link' ) ;
+document .querySelector(`[href="#${id}"]`) .classList.add( 'active__link' ) ;
+}
 // walk smoothly between sections
 navUl.addEventListener("click", (action) => {
     action.preventDefault();
@@ -42,6 +46,7 @@ navUl.addEventListener("click", (action) => {
       document
         .getElementById(`${action.target.dataset.nav}`)
         .scrollIntoView({ behavior: "smooth" });
+        addActiveLink(`action.target.dataset.[data-nav=${section.id}]`);
     }
   });
 

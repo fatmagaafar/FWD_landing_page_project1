@@ -199,7 +199,12 @@ section.your-active-class {
     background: rgb(7, 7, 7);
     background: linear-gradient(0deg, rgba(7, 7, 7, 0.5) 0%, rgba(68, 97, 202, 0) 100%);
 }
-
+.active__link
+{
+    background: #333;
+    background: linear-gradient(0deg, rgba(7, 7, 7, 0.7) 0%, rgba(68, 97, 202, 0) 100%);
+    
+}
 section.your-active-class .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
