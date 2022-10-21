@@ -1,13 +1,13 @@
 # Landing Page Project
 
-## Table of Contents
+- First i have added the navigation bar links dynamiclly
 
-* [Instructions](#instructions)
+- I created a function to create a link for each section and calling it after that.
 
-## Instructions
+- i created an active link and section that are connected with each other in the UI that the section reflect the link in the navigation bar 
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+- creating a new calss called "active__link" to style the links during the scrolling
 
-To get started, open `js/app.js` and start building out the app's functionality
+- creating an event to make the page go smoothly while clicking the section link on the navigation bar
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+
